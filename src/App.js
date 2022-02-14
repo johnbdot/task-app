@@ -1,11 +1,14 @@
-import Overview from "./components/Overview";
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div>
-      <Overview />
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      task: { text: "" },
+      tasks: [],
+    };
+  }
 }
 
 export default App;
